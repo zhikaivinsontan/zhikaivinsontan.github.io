@@ -1,0 +1,11 @@
+The following code were referenced:
+
+Radar Chart
+https://github.com/alangrafu/radar-chart-d3
+http://bl.ocks.org/chrisrzhou/2421ac6541b68c1680f8
+
+Piechart
+http://bl.ocks.org/dbuezas/9306799
+
+Venn Diagram
+https://medium.com/@cmmyers/how-i-made-an-interactive-venn-diagram-with-d3-fa723c55a148

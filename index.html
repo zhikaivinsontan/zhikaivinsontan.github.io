@@ -1,0 +1,173 @@
+<head>
+    
+    <link rel="stylesheet" href="index.css">
+    <title>Exploring Peranakan culture through Data Visualization</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+        
+    <script src = "https://d3js.org/d3.v4.min.js"></script>
+
+    <div class="containerMain">
+        <img src="images/shophouse.jpg" alt="Snow" style="width:70%;">
+        
+        <div class="centeredMain">Exploring Peranakan Culture<br> through Data Visualization</div>
+      </div>
+
+
+
+
+      <!-- This is the first part of the webpage - the part on the History of the Peranakan Culture -->
+    <h2 class="h2div">History of the Peranakan Culture</h2>
+    <hr class="dividerline">
+
+    <!-- The following code displays the timeline visualization -->
+    <div class="container">
+            <div class="row">
+              <div class="col"style="background-color:white">
+                <div class="timelineTitle">Timeline: 15th Century to Present</div>
+                <svg width="1000" height="100">
+        
+                <line x1="100" y1="40" x2="1000" y2="40" stroke="gray" stroke-width="5"  />
+
+                <line x1="105" y1="30" x2="105" y2="50" stroke="gray" stroke-width="3"  onclick="firstTimeline(0)"/>
+                <text x="105" y="70" class="small" fill="grey" onclick="firstTimeline(0)">15th Century to 17th Century</text>
+
+                <line x1="300" y1="30" x2="300" y2="50" stroke="gray" stroke-width="3"  onclick="firstTimeline(1)"/>
+                <text x="300" y="70" class="small" fill="grey" onclick="firstTimeline(1)">1819</text>
+
+                <line x1="400" y1="30" x2="400" y2="50" stroke="gray" stroke-width="3"  onclick="firstTimeline(2)"/>
+                <text x="400" y="70" class="small" fill="grey" onclick="firstTimeline(2)">1819-1889</text>
+
+                <line x1="500" y1="30" x2="500" y2="50" stroke="gray" stroke-width="3"  onclick="firstTimeline(3)"/>
+                <text x="500" y="70" class="small" fill="grey" onclick="firstTimeline(3)">1850-1940</text>
+
+                <line x1="640" y1="30" x2="640" y2="50" stroke="gray" stroke-width="3"  onclick="firstTimeline(4)"/>
+                <text x="640" y="70" class="small" fill="grey" onclick="firstTimeline(4)">1945</text>
+
+                <line x1="700" y1="30" x2="700" y2="50" stroke="gray" stroke-width="3"  onclick="firstTimeline(5)"/>
+                <text x="700" y="70" class="small" fill="grey" onclick="firstTimeline(5)">Mid 20th Century</text>
+
+                <line x1="810" y1="30" x2="810" y2="50" stroke="gray" stroke-width="3"  onclick="firstTimeline(6)"/>
+                <text x="810" y="70" class="small" fill="grey" onclick="firstTimeline(6)">1971</text>
+        </svg>
+</div>
+</div> 
+</div>
+
+    <div class="container">
+            <div class="row">
+              <div class="col"style="background-color:white">
+                    <img src="images/map1.png" alt="" class="part1img">
+              </div>
+              <div class="col" style="background-color:white">
+                    <div id="timelinePeriod">15th Century</div>
+                    <div id="timelineCommentary">Traders from China came to Singapore, Malaysia and Indonesia (Melaka, Penang, Singapore, and Cirebon)</div>
+              </div>
+            </div>        
+    </div>
+    <script src="timeline.js"></script>
+
+
+    <!-- This is the second part of the webpage - the part on Notable Peranakans and their Contributions -->
+    <h2 class="h2div">Notable Peranakans and their Contributions</h2>
+    <hr class="dividerline">
+    <div id="part3">
+            <div class="container">
+        <div id="personData">
+                <div class="row">
+                        <div class="column">
+                            <img onclick="changeText(0)" src="images/cheahhonglim.jpg">
+                            <img onclick="changeText(1)" src="images/oeitiongham.jpg">
+                            <img onclick="changeText(2)" src="images/tanjiakkim.jpg">
+                            <img onclick="changeText(3)" src="images/chankimboon.jpg">
+                            <img onclick="changeText(4)" src="images/ongboontat.jpg">
+                            <img onclick="changeText(5)" src="images/gohhoodkeng.jpeg">
+                            <img onclick="changeText(6)" src="images/songongsiang.jpg">
+                            <img onclick="changeText(7)" src="images/tanchayyan.jpg">
+                            <img onclick="changeText(8)" src="images/limneesoon.jpeg">
+                            <img onclick="changeText(9)" src="images/tanbooliat.jpg">
+                            <img onclick="changeText(10)" src="images/limboonkeng.jpg">
+                            <img onclick="changeText(11)" src="images/chewjoochiat.jpg">
+                            <img onclick="changeText(12)" src="images/cheongkoonseng.jpg">
+                            <img onclick="changeText(13)" src="images/leechoonguan.jpg">
+                            <img onclick="changeText(14)" src="images/kohhoonteck.jpg">
+                            <img onclick="changeText(15)" src="images/leechooneo.jpg">
+                            <img onclick="changeText(16)" src="images/limyewhock.jpeg">       
+                        </div>
+                    </div>
+                    <p></p>
+                    <p></p>
+                
+                        <div class="row">
+                          <div class="col"style="background-color:white">
+                                <div id="personInformation">
+                                        <img id="personPhoto" src="images/cheahhonglim.jpg">
+                                        <div id="personName"><b></b></div>
+                                        <div id="personMeta"></div>
+                                        <div id="personNickname"></div>
+                                        <div id="personAbstract"></div>
+                                    </div>
+                          </div>
+                          <div class="col" style="background-color:white">
+                                <div id="personRadar">
+                                        <svg width="600" height="550" id="svg2"></svg>
+                                    </div>
+                          </div>
+                        </div>        
+                </div>
+        </div>
+        
+    </div>
+
+    <!-- This is the third part of the webpage - Lifestyle/Languages/Religions -->
+    <h2 class="h2div">Languages Spoken and Main Religions within the Peranakan Ethnicity</h2>
+    <hr class="dividerline">
+    <div class="container">
+
+        <!-- This covers the part of the pie charts that deal with language and religion -->
+                    <div class="row">
+                            <div class="column">
+                                <div class="languagediv">Language</div>
+                                <div id="my_dataviz"></div>
+                            </div>
+                            <div class="column">
+                                    <div class="languagediv">Religion</div>
+                                <div id="religion_pie"></div>
+                            </div>
+                        </div>
+                    </div>
+    <script src="piechart.js"></script>
+    <script src="piechartReligion.js"></script>
+
+
+
+
+    <!-- This is the fourth part of the webpage - Variations of the Ethnicity -->
+    <h2 class="h2div">Variations of the Peranakan Ethnicity</h2>
+    <hr class="dividerline">
+
+    <div id="part2">
+
+        <!-- This covers the part of visualization of the venn diagram -->
+        <div id="venndiv">
+                <svg width="600" height="600" id="svg1"></svg>
+                <div id="part2button">
+                        <button class="part2button" type="button" onclick="part2European()">Serani</button>
+                        <button class="part2button" type="button" onclick="part2Chinese()">Baba/Nyonya</button>
+                        <button class="part2button" type="button" onclick="part2Indian()">Chitty</button>
+                </div>
+        </div>
+        <div id="imgdiv">
+            <img id="part2img" src="images/chitty.jpg" alt="">
+            <p id="part2textdiv"></p>
+        </div>
+    </div>
+
+
+
+    
+    
+    
+    <script src="index.js"></script>
+</body>
