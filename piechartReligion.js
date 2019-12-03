@@ -19,7 +19,7 @@ var data = {Buddism:30,Taoism: 30 ,Islam:10,Christianity: 30}
 
 // set the color scale
 var color = d3.scaleOrdinal()
-  .domain(["Christianity", "Buddism", "Taoism","Islam"])
+  .domain(["Christianity", "Buddhism", "Taoism","Islam"])
   .range(d3.schemeCategory10);
 
 // Compute the position of each group on the pie:

@@ -1,3 +1,8 @@
+.statssvg {
+  display: block;
+  margin: auto;
+}
+
 
 .timelineTitle {
   font-weight: bold;
@@ -168,7 +173,7 @@ body {
     background-color: #f0f0f0;
 }
 
-circle {
+.vennSvg circle {
     opacity: 0.4;
     stroke: #999999;
     stroke-width: 3px;

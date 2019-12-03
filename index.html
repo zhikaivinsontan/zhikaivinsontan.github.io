@@ -120,6 +120,28 @@
         
     </div>
 
+
+    <!-- This is the third part of the webpage - Demographic Statistics -->
+    <h2 class="h2div">Present-Day Demographic Statistics</h2>
+    <hr class="dividerline">
+    <div class="container">
+            <div class="row">
+                <svg width="800" height="100" id="statslegend" class="statssvg"></svg>
+            </div>
+
+        <div class="row">
+            <div class="col" style="background-color:white">
+                <div class="languagediv"> Malaysia</div>
+                    <svg width="700" height="500" id="malaysiasvg" class="statssvg"></svg>
+            </div>
+            <div class="col" style="background-color:white">
+                    <div class="languagediv"> Singapore</div>
+                    <svg width="700" height="500" id="singaporesvg" class="statssvg"></svg>
+            </div>
+        </div>
+        <script src="dots.js"></script>
+    </div>
+
     <!-- This is the third part of the webpage - Lifestyle/Languages/Religions -->
     <h2 class="h2div">Languages Spoken and Main Religions within the Peranakan Ethnicity</h2>
     <hr class="dividerline">
@@ -151,7 +173,7 @@
 
         <!-- This covers the part of visualization of the venn diagram -->
         <div id="venndiv">
-                <svg width="600" height="600" id="svg1"></svg>
+                <svg width="600" height="600" id="svg1" class="vennSvg"></svg>
                 <div id="part2button">
                         <button class="part2button" type="button" onclick="part2European()">Serani</button>
                         <button class="part2button" type="button" onclick="part2Chinese()">Baba/Nyonya</button>
